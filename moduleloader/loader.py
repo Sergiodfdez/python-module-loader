@@ -2,7 +2,7 @@ import sys
 import inspect
 import os
 
-class ModuleLoader:
+class RelativePath:
 
     def __init__(self, relativePath,modules=[]):
         frame = inspect.stack()[1]
