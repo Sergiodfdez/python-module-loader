@@ -9,7 +9,6 @@ class RelativePath:
         path = os.path.join(os.path.join(os.path.dirname(frame[1]),relativePath))
         if not modules:
             for root, dirs, files in os.walk(path):
-                print root
                 sys.path.append(root)
         else:
             for root, dirs, files in os.walk(path):
@@ -21,4 +20,4 @@ class RelativePath:
 
         if modules:
             for module in modules:
-                print "no process module", module
+                print("no process module", module)
